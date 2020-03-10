@@ -1,0 +1,325 @@
+/* soft reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #242424;
+  --primary: #cb3b3b;
+  --primaryB: #85203b;
+  --secondaryB: #e0c45c;
+  --light: #fafafa;;
+} 
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.wrapper {
+  background: black;
+}
+
+/***************************** header **************************/
+header {
+  height: 70px;
+}
+.header-list {
+  display: none;
+}
+.loader {
+  display: block;
+  height: 3px;
+  background-color: var(--secondaryB);
+  animation: progress 0.4s cubic-bezier(.42,-0.01,.56,.16);
+}
+/* mobile header */
+.mobile-header i{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color:var(--primary);
+  transition: transform .5s ease-in-out;
+}
+.mobile-header i:hover {
+  color: var(--primaryB);
+}
+.turn {
+  transform: rotate(90deg);
+}
+.mobile-header h1 {
+  color: var(--secondaryB);
+  position: absolute; 
+  top: 18px;
+  right: 20px;
+}
+
+
+/* menu */
+#nav-list {
+  width: 60%;
+  /* 100% + header - 55 from top */
+  height: calc(100% + 10vh - 55px);
+  position: absolute;
+  top: 55px;
+  left: 0;
+  background: var(--primaryB);
+  border: 1px solid #444;
+  padding: 12px;
+  transform: translateX(-500px);
+  transition: transform 0.5s ease;
+}
+#nav-list.show {
+  transform: translateX(0px);
+}
+#nav-list li {
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--secondaryB);
+  padding: 10px 0;
+}
+
+/* see code link */
+#nav-list .text-special {
+  color: var(--secondaryB);
+  font-style: italic;
+}
+#nav-list i {
+  color: var(--secondaryB);
+  position: relative;
+  font-size: 24px;
+  top: 0;
+  margin-bottom: 20px;
+}
+
+#nav-list li:last-child {
+  border: none;
+}
+#nav-list li a{
+  color: var(--light);
+}
+#nav-list li a:hover {
+  cursor: pointer;
+}
+
+
+/****************************** body ************************/
+
+.main-section {
+  height: 100%;
+  width: 100%;
+  padding: 40px 25px;
+  background: var(--light);
+}
+
+.page-title {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.food-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(1fr, 300px);
+  row-gap: 50px;
+}
+
+.food-card {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  
+}
+
+.food-img {
+  height: 200px;
+  border-radius: 3px;
+  box-shadow: 
+  -3px -3px 3px 0 rgba(255,255,255, 1),
+  3px 3px 3px 0 rgba(0,0,0, 0.3);
+}
+
+.food-title {
+  display: inline-block;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.food-desc {
+  line-height: 1.5;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.food-card:hover .food-title.menu {
+  color: var(--primaryB);
+}
+
+
+/****************** footer **********************************/
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  background: linear-gradient(rgba(203, 59, 59, 0.5),rgba(203, 59, 59, 0.3));
+  color: var(--light);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 2px solid #444;
+}
+
+footer h3 {
+  color: var(--secondaryB);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/************************* media queries ********************/
+/* iphone 5 in landscape */
+@media (max-height: 320px) and (orientation: landscape) {
+
+  .mobile-header h1 {
+    font-size: 1.5rem;
+  }
+  #nav-list {
+  height: calc(100%);
+  }
+
+}
+
+
+/* all phones under tablets */
+@media (min-width: 350px ) {
+
+  #nav-list li{
+    font-size: 1.3rem;
+  }
+  /********* F *************/
+  footer {
+    height: 220px;
+  }
+  footer h3 {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+/* phones in landscape  */
+@media (max-height: 500px) and (orientation: landscape){
+  
+  #nav-list {
+    width: 40%;
+    height: calc(100% + 125px - 55px);
+    padding: 10px;
+  }
+  #nav-list li {
+    font-size: 1.1rem;
+  }
+/* ******** M ********* */
+  .food-img {
+    height: 250px;
+  }
+  /******** F *******/
+  footer {
+    height: 125px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+
+
+/* tablets and up */
+@media (min-width: 500px) and (min-height: 501px){
+
+  .mobile-header {
+    display: none;
+  }
+  .header-list {
+    height: 70px;
+    width: 100%;
+    background: black;
+    padding: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .header-list h1 a {
+    color: var(--secondaryB);
+  }
+  .header-list h1 a:hover {
+    color: #e0c35cbd
+  }
+  .header-list ul {
+    font-size: 1.3rem;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* github link */
+  .github-link {
+    color: var(--light);
+    font-size: 32px;
+  }
+  .header-list ul li a:hover {
+    color: var(--secondaryB);
+  }
+  .header-list a {
+    color: white;
+  }
+  .page-title {
+    font-size: 3rem;
+  }
+/* ******** M ********/
+  .food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: 1fr;
+    column-gap: 25px;
+    row-gap: 50px;
+  }
+  .food-img {
+    height: 300px;
+  }
+  .food-title {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .food-desc {
+    font-size: 1.5rem;
+  }
+  /******** F *******/
+  footer {
+    height: 125px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+
+/*******************animations  **************************/
+@keyframes progress {
+  0% {width: 0;}
+  100% {width: 100%;}
+}
+

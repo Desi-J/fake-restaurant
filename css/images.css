@@ -1,0 +1,150 @@
+/* about */
+.about1 {
+  background: url('../img/about1.jpg') no-repeat center center/cover;
+}
+.about2 {
+  background: url('../img/about2.jpg') no-repeat center center/cover;
+}
+.about3 {
+  background: url('../img/about3.jpg') no-repeat center center/cover;
+}
+
+
+/* menu */
+.appetizer {
+  background: url('../img/appetizer1.jpg') no-repeat center center/cover;
+}
+.bbq {
+  background: url('../img/bbq1.jpg') no-repeat center center/cover;
+}
+.burger {
+  background: url('../img/burger1.jpg') no-repeat center center/cover;
+}
+.desert {
+  background: url('../img/desert1.jpg') no-repeat center center/cover;
+}
+.kids {
+  background: url('../img/k1.jpg') no-repeat center center/cover;
+}
+.sea-chicken {
+  background: url('../img/sc1.jpg') no-repeat center center/cover;
+}
+.steak {
+  background: url('../img/steak1.jpg') no-repeat center center/cover;
+}
+
+
+/* appetizers */
+.a-1 {
+  background: url('../img/appetizer1.jpg') no-repeat center center/cover;
+}
+
+.a-2 {
+  background: url('../img/appetizer2.jpg') no-repeat center center/cover;
+}
+
+.a-3 {
+  background: url('../img/appetizer3.jpg') no-repeat center center/cover;
+}
+.a-4 {
+  background: url('../img/appetizer4.jpg') no-repeat center center/cover;
+}
+
+
+/* bbq */
+.bbq1 {
+  background: url("../img/bbq1.jpg") no-repeat center center/cover;
+}
+.bbq2 {
+  background: url("../img/bbq2.jpg") no-repeat center center/cover;
+}
+.bbq3 {
+  background: url("../img/bbq3.jpg") no-repeat center center/cover;
+}
+.bbq4 {
+  background: url("../img/bbq4.jpg") no-repeat center center/cover;
+}
+.bbq5 {
+  background: url("../img/bbq5.jpg") no-repeat center center/cover;
+}
+
+/* burgers */
+.brg1 {
+  background: url("../img/burger1.jpg") no-repeat center center/cover;
+}
+.brg2 {
+  background: url("../img/burger2.jpg") no-repeat center center/cover;
+}
+.brg3 {
+  background: url("../img/burger3.jpg") no-repeat center center/cover;
+}
+
+/* deserts */
+.des1 {
+  background: url("../img/desert1.jpg") no-repeat center center/cover;
+}
+.des2 {
+  background: url("../img/desert2.jpg") no-repeat center center/cover;
+}
+.des3 {
+  background: url("../img/desert3.jpg") no-repeat center center/cover;
+}
+.des4 {
+  background: url("../img/desert4.jpg") no-repeat center center/cover;
+}
+
+
+/* kids menu */
+.k1 {
+  background: url("../img/k1.jpg") no-repeat center center/cover;
+}
+.k2 {
+  background: url("../img/k2.jpg") no-repeat center center/cover;
+}
+.k3 {
+  background: url("../img/k3.jpg") no-repeat center center/cover;
+}
+.k4 {
+  background: url("../img/k4.jpg") no-repeat center center/cover;
+}
+.k5 {
+  background: url("../img/k5.jpg") no-repeat center center/cover;
+}
+
+/* seafood chicken */
+.sc1 {
+  background: url("../img/sc1.jpg") no-repeat center center/cover;
+}
+.sc2 {
+  background: url("../img/sc2.jpg") no-repeat center center/cover;
+}
+.sc3 {
+  background: url("../img/sc3.jpg") no-repeat center center/cover;
+}
+.sc4 {
+  background: url("../img/sc4.jpg") no-repeat center center/cover;
+}
+.sc5 {
+  background: url("../img/sc5.jpg") no-repeat center center/cover;
+}
+.sc6 {
+  background: url("../img/sc6.jpg") no-repeat center center/cover;
+}
+.sc7 {
+  background: url("../img/sc7.jpg") no-repeat center center/cover;
+}
+.sc8 {
+  background: url("../img/sc8.jpg") no-repeat center center/cover;
+}
+
+
+/* steaks */
+.steak1 {
+  background: url("../img/steak1.jpg") no-repeat center center/cover;
+}
+.steak2 {
+  background: url("../img/steak2.jpg") no-repeat center center/cover;
+}
+.steak3 {
+  background: url("../img/steak3.jpg") no-repeat center center/cover;
+}
